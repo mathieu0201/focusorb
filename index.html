@@ -3,80 +3,163 @@
     
 
 <head>
-
   <meta charset="UTF-8">
   <title>FocusOrb</title>
-
 </head>
+
+<body>
 
 <header>
 
     <strong>FocusOrb</strong>
 
     <nav>
-        <a href="Fonctionnalités.html">Fonctionnalités</a>
-        <a href="Tarifs.html">Tarifs</a>
-        <a href="Connexion.html">Connexion</a>
+        <a href="#fonctionnalites">Fonctionnalités</a>
+        <a href="#tarifs">Tarifs</a>
+        <a href="#connexion">Connexion</a>
     </nav>
 
 </header>
 
-<body>
+<main>
 
-    <section>
-        <h1>FocusOrb nous organisons votre productivité</h1> 
+    <section arial-label="Présentation de focusOrb">
 
-        <p>
-            FocusOrb aide les petites équipes à mieux organiser leur travail en remplaçant les notes dispersées
+        <h1 id="presentation-de-focusorb">FocusOrb nous organisons votre productivité</h1> 
+
+           <p>
+             FocusOrb aide les petites équipes à mieux organiser leur travail en remplaçant les notes dispersées
             et les listes de tâches par des sessions de concentration structurées.
-        <span>Des sessions de concentration structurées</span>
-        </p>
+            <span>Des sessions de concentration structurées</span>
+           </p>
 
-        <p>
+           <p>
             Chaque membre peut définir ses objectifs quotidiens, suivre ses périodes de travail en profondeur et
             visualiser ses progrès.Chaque membre peut définir ses objectifs quotidiens, suivre ses périodes de 
             travail en profondeur et visualiser ses progrès.
             <span>Visualiser ses progrès</span>
-        </p>
+           </p>
 
-        <p>
+           <p>
             L’équipe partage ensuite un rapport hebdomadaire pour suivre l’avancement collectif et rester alignée.
-        <span>Suivre l’avancement collectif</span>
-        </p>
+            <span>Suivre l’avancement collectif</span>
+           </p>
 
-        <a href="Commencergratuitement.html">Commencer gratuitement</a>
+           <a href="Commencergratuitement.html">Commencer gratuitement</a>
 
     </section>
 
-    <section>
+    <section arial-label="Fonctionnalités de focusOrb">
 
-        <h2>Fonctionnalités</h2>
+        <h2 id="fonctionnalites de focusorb">Fonctionnalités</h2>
 
-        <ul>
-            <li><strong>Minuteur de concentration</strong> et reste concentré sur une seule tâche.</li>
-        </ul>
+            <article>
+                <h3>Minuteur de concentration</h3>
+                <p>Lance une session de travail focalisée pour rester concentré sur une seule 
+                    tâche et limiter les distractions.</p>
+            </article>
 
-        <ul>
-            <li><strong>Tableau de bord partagé</strong> et des sessions de concentration de toute l’équipe au même endroit.</li> 
-        </ul>
+            <article>
+                <h3>Tableau de bord partagé</h3>
+                <p>Centralise les objectifs et les sessions de concentration afin que toute 
+                    l’équipe puisse suivre l’avancement au même endroit.</p>
+            </article>
 
-        <ul>
-            <li><strong>Rapport hebdomadaire</strong> clairs sur les progrès réalisés pendant la semaine.</li>
-        </ul>
-
+            <article>
+                <h3>Rapport hebdomadaire</h3>
+                <p>Résume les progrès réalisés pendant la semaine pour garder toute l’équipe 
+                    alignée sur les objectifs.</p>
+            </article>
+        
     </section> 
+
+    <section arial-label="Témoignages de focusOrb">
+        <h2 id="temoignages de focusorb">Témoignages</h2>
+
+            <blockquote>
+                <p>« Nos réunions hebdomadaires sont passées de 45 à 10 minutes une fois que tout 
+                    le monde a utilisé un journal de bord partagé. » Zara, fondatrice d'une plateforme 
+                    de marché sur le climat</p>
+            </blockquote>
+
+            <blockquote>
+                <p>« Les investisseurs ont cessé de demander des rapports d'étape en cours de sprint. 
+                    Le rapport hebdomadaire a suffi. » Noah, responsable des opérations IA</p>
+            </blockquote>
+
+            <blockquote>
+                <p>« Après trois mois, le taux de remboursement des dettes a diminué de 40 %. C’est 
+                    le seul indicateur qui importe au conseil d’administration. » Mei, directrice 
+                    des opérations</p>
+            </blockquote>
+
+    </section>
+
+    <section arial-label="Tarifs de focusOrb">
+
+        <h2 id="tarifs de focusorb">Tarifs</h2>
+
+        <dl>
+
+            <dt>Gratuit</dt>
+            <dd>Jusqu’à 5 membres.Fonctionnalités de base.Support par email</dd>
+            
+            <dt>Pro</dt>
+            <dd>20 €/mois.Jusqu’à 50 membres.Toutes les fonctionnalités.Support prioritaire.</dd>
+            
+            <dt>Entreprise</dt>
+            <dd>50€/mois.Membres illimités.Fonctionnalités avancées.Support dédié et formation</dd>
+
+        </dl>
+
+    </section>   
+
+    <section aria-labelledby="Inscription">
+        <h2 id="Inscription">Rejoignez la liste d'attente beta</h2>
+
+        <form>
+            <fieldset>
+                <legend>Vos informations</legend>
+
+                <label for="nom">Nom complet</label>
+                <input id="nom" name="nom" type="text" autocomplete="name" required/>
+
+                <label for="email">Adresse courriel professionnelle</label>
+                <input id="email" name="email" type="email" autocomplete="email" required/>
+
+                <label for="role">Votre rôle</label>
+
+                <select id="role" name="role" required>
+                    <option value="">Sélectionnez un rôle</option>
+                    <option value="fondateur">Fondateur</option>
+                    <option value="operateur">Opérateur</option>
+                    <option value="ingenieur">Ingénieur</option>
+                    <option value="designer">Designer</option>
+                </select>
+                
+
+                <label for="equipe">Parlez-nous de votre équipe (facultatif)</label>
+                <textarea id="equipe" name="equipe" rows="3"></textarea>
+
+                <label> <input type="checkbox" id="accord-beta" name="accord-beta" aria-describedby="explication-beta" required/>Je comprends les obligations liées à la version bêta.</label>
+
+            </fieldset>
+                <button type="submit">Réserver un siège bêta</button>
+        </form>
+
+    </section>S
+</main>
     
-    <section>
+    <footer>
 
-        <h2>Rejoignez la beta</h2>
-            <p>Inscrivez-vous dès maintenant pour découvrir FocusOrb en avant-première et faire partie des premières 
-            équipes à tester notre nouvelle façon de travailler avec plus de concentration.</p>
-            <a href="Reservezvotreplace.html">Reservezvotreplace</a>
+        <nav arial-label="footer">
+            <a href="#fonctionnalites">Fonctionnalités</a>
+            <a href="#tarifs">Tarifs</a>
+        </nav>
 
-    </section>  
-    
-    <footer>© 2026 FocusOrb</footer>    
+        <p>© 2026 FocusOrb</p>
 
+    </footer>
 
 </body>
 </html>
